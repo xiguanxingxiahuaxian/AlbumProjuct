@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ui.origin.com.libaryalbum" >
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <application>
+        <activity android:name=".activity.AlbumActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".activity.UpLoadSimpleActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+    </application>
+</manifest>

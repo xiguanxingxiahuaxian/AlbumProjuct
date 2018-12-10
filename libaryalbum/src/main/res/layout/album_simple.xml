@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout android:id="@+id/title_insert"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:orientation="vertical"
+          android:visibility="gone">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:verticalSpacing="4dp"
+            android:horizontalSpacing="4dp"
+            android:layout_centerVertical="true"
+            android:numColumns="3"
+            android:padding="10dp"></GridView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bull_44"
+        android:visibility="gone"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="上  传" />
+    </RelativeLayout>
+</LinearLayout>
