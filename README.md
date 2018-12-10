@@ -1,14 +1,18 @@
+1项目持续更新，暂时退出一个简版
+
 UpLoadSimpleActivity 上传activity
 
 AlbumActivity 相册打开activity
 
+2启动例子代码
 
-1 用户选择构建模式  用户提供地址，以及接口
-  需要相机 
-  不需要相机的模式
-2 用户定义打开相册显示照片的行数，以及所选的大小
-3 主题颜色设计，默认蓝色
-4 添加自定界面
-
-最后实现上传，退出版本1.0 
+    ShowImageCoreBean core =
+                new ShowImageCoreBean
+                        .Builder()
+                        .columSize(2)
+                        .imageCheckSize(9)
+                        .build();
+        Intent intent =new Intent(Work121001.this, UpLoadSimpleActivity.class);
+        intent.putExtra("corebean",core);
+        startActivity(intent);
 
